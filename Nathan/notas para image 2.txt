@@ -1,0 +1,3 @@
+           'ISC-GEM':['#         date          ','#         date          ','#         date          ','#         date          ','#         date          ','#         date          ','    eventid','    lon   ','    lat   ','  depth ',['  mw  '],False],
+[22/11 13:37] Clarke, Nathan
+           'ANSS' : ['time','time','time','time','time','time','id2','longitude','latitude','depth','mag','magType'],

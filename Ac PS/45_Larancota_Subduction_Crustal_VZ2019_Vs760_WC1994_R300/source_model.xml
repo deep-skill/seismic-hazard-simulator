@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nrml 
+xmlns="http://openquake.org/xmlns/nrml/0.5"
+xmlns:gml="http://www.opengis.net/gml" 
+>
+	<sourceModel
+	name="Seismic_Hazard_Analysis_Larancota"
+	>
+        <sourceGroup
+        name="group 1"
+        tectonicRegion="Subduction Interface"
+        >			
+			<complexFaultSource
+			id="3"
+			name="Interface_F3"
+			tectonicRegion="Subduction Interface"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-76.204	-15.413	20
+								-78.149	-13.490	20
+								-79.003	-12.242	20
+								-79.681	-11.425	20
+								-80.295	-10.358	20
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.934	-15.237	30
+								-76.451	-14.531	30
+								-77.422	-13.393	30
+								-78.123	-12.465	30
+								-79.123	-11.348	30
+								-79.901	-10.145	30
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.660	-15.057	40
+								-76.330	-14.257	40
+								-77.223	-13.126	40
+								-77.825	-12.183	40
+								-78.515	-11.377	40
+								-79.204	-10.571	40
+								-79.578	-9.969	40
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.494	-14.949	45
+								-75.939	-14.383	45
+								-76.663	-13.583	45
+								-77.638	-12.072	45
+								-78.600	-11.001	45
+								-79.414	-9.881	45
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.378	-14.873	50
+								-76.481	-13.579	50
+								-77.254	-12.389	50
+								-78.027	-11.199	50
+								-78.569	-10.559	50
+								-79.207	-9.768	50
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.154	-14.726	60
+								-76.044	-13.671	60
+								-76.319	-13.265	60
+								-76.936	-12.202	60
+								-77.855	-10.867	60
+								-78.773	-9.533	60
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.8173" bValue="0.6776" maxMag="8.6" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="4"
+			name="Interface_F4"
+			tectonicRegion="Subduction Interface"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-73.224	-17.778	20
+								-73.546	-17.560	20
+								-74.566	-16.800	20
+								-75.586	-16.039	20
+								-76.204	-15.413	20
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.952	-17.563	30
+								-74.019	-16.859	30
+								-75.062	-16.171	30
+								-75.442	-15.851	30
+								-75.663	-15.607	30
+								-75.934	-15.237	30
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.746	-17.402	40
+								-73.224	-17.109	40
+								-73.795	-16.715	40
+								-74.366	-16.321	40
+								-74.926	-15.868	40
+								-75.660	-15.057	40
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.584	-17.274	45
+								-73.655	-16.649	45
+								-74.703	-15.848	45
+								-75.123	-15.421	45
+								-75.494	-14.949	45
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.522	-17.212	50
+								-73.675	-16.506	50
+								-73.911	-16.343	50
+								-74.652	-15.724	50
+								-75.378	-14.873	50
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.288	-17.042	60
+								-73.122	-16.625	60
+								-73.634	-16.285	60
+								-74.019	-15.977	60
+								-74.539	-15.455	60
+								-75.154	-14.726	60
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="2.9455" bValue="0.5678" maxMag="8.4" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>			
+			<complexFaultSource
+			id="5"
+			name="Interface_F5"
+			tectonicRegion="Subduction Interface"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.244	-21.605	20
+								-71.256	-21.045	20
+								-71.382	-20.001	20
+								-71.764	-19.156	20
+								-72.212	-18.651	20
+								-72.749	-18.136	20
+								-73.224	-17.778	20
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.842	-21.460	30
+								-70.832	-20.301	30
+								-70.920	-19.641	30
+								-71.201	-19.040	30
+								-71.522	-18.659	30
+								-72.030	-18.224	30
+								-72.952	-17.563	30
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.580	-21.366	40
+								-70.607	-20.194	40
+								-70.777	-19.351	40
+								-71.062	-18.773	40
+								-71.324	-18.430	40
+								-71.792	-17.985	40
+								-72.746	-17.402	40
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.442	-21.317	45
+								-70.478	-20.344	45
+								-70.537	-19.868	45
+								-70.644	-19.400	45
+								-70.929	-18.741	45
+								-71.362	-18.165	45
+								-71.804	-17.761	45
+								-72.584	-17.274	45
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.316	-21.271	50
+								-70.349	-20.522	50
+								-70.472	-19.694	50
+								-70.563	-19.339	50
+								-70.762	-18.811	50
+								-70.940	-18.495	50
+								-71.204	-18.138	50
+								-71.667	-17.693	50
+								-72.522	-17.212	50
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.046	-21.174	60
+								-70.167	-20.301	60
+								-70.297	-19.575	60
+								-70.428	-19.101	60
+								-70.604	-18.642	60
+								-70.833	-18.207	60
+								-71.126	-17.810	60
+								-71.491	-17.482	60
+								-71.914	-17.229	60
+								-72.288	-17.042	60
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.7193" bValue="0.7062" maxMag="8.2" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>		
+		</sourceGroup>
+
+        <sourceGroup
+        name="group 2"
+        tectonicRegion="Subduction Intraslab"
+        >
+			<complexFaultSource
+			id="8"
+			name="Intraslab_Sup_F8"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.378	-14.873	50
+								-76.481	-13.579	50
+								-77.254	-12.389	50
+								-78.027	-11.199	50
+								-78.569	-10.559	50
+								-79.207	-9.768	50
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-75.154	-14.726	60
+								-76.044	-13.671	60
+								-76.319	-13.265	60
+								-76.936	-12.202	60
+								-77.855	-10.867	60
+								-78.773	-9.533	60
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-74.937	-14.590	70
+								-75.796	-13.585	70
+								-77.142	-11.501	70
+								-78.505	-9.385	70
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-74.825	-14.519	75
+								-75.572	-13.671	75
+								-75.804	-13.338	75
+								-76.312	-12.461	75
+								-76.998	-11.457	75
+								-77.760	-10.260	75
+								-78.366	-9.307	75
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-74.680	-14.428	80
+								-75.494	-13.513	80
+								-76.416	-12.166	80
+								-77.290	-10.801	80
+								-78.264	-9.251	80
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-74.356	-14.224	90
+								-75.213	-13.357	90
+								-76.627	-11.286	90
+								-78.077	-9.148	90
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.6769" bValue="0.6886" maxMag="8.2" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>		
+			<complexFaultSource
+			id="9"
+			name="Intraslab_Sup_F9"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.522	-17.212	50
+								-73.675	-16.506	50
+								-73.911	-16.343	50
+								-74.652	-15.724	50
+								-75.378	-14.873	50
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.288	-17.042	60
+								-73.122	-16.625	60
+								-73.634	-16.285	60
+								-74.019	-15.977	60
+								-74.539	-15.455	60
+								-75.154	-14.726	60
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.090	-16.886	70
+								-73.021	-16.442	70
+								-73.424	-16.165	70
+								-74.114	-15.554	70
+								-74.937	-14.590	70
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.991	-16.809	75
+								-72.883	-16.401	75
+								-73.140	-16.240	75
+								-73.536	-15.923	75
+								-74.192	-15.291	75
+								-74.825	-14.519	75
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.913	-16.748	80
+								-72.723	-16.364	80
+								-73.159	-16.080	80
+								-73.779	-15.522	80
+								-74.294	-14.862	80
+								-74.680	-14.428	80
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>						
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.742	-16.614	90
+								-72.548	-16.227	90
+								-72.848	-16.032	90
+								-73.121	-15.800	90
+								-73.594	-15.262	90
+								-73.942	-14.776	90
+								-74.356	-14.224	90
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="2.8511" bValue="0.5765" maxMag="8.4" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="10"
+			name="Intraslab_Sup_F10"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>
+								-70.316	-21.271	50
+								-70.349	-20.522	50
+								-70.472	-19.694	50
+								-70.563	-19.339	50
+								-70.762	-18.811	50
+								-70.940	-18.495	50
+								-71.204	-18.138	50
+								-71.667	-17.693	50
+								-72.522	-17.212	50
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.046	-21.174	60
+								-70.167	-20.301	60
+								-70.297	-19.575	60
+								-70.428	-19.101	60
+								-70.604	-18.642	60
+								-70.833	-18.207	60
+								-71.126	-17.810	60
+								-71.491	-17.482	60
+								-71.914	-17.229	60
+								-72.288	-17.042	60
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-69.830	-21.096	70
+								-69.887	-20.595	70
+								-70.093	-19.754	70
+								-70.299	-18.914	70
+								-70.551	-18.284	70
+								-70.744	-17.939	70
+								-71.085	-17.518	70
+								-71.403	-17.264	70
+								-72.090	-16.886	70
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-69.707	-21.052	75
+								-69.725	-20.886	75
+								-69.846	-20.342	75
+								-69.968	-19.798	75
+								-70.203	-18.916	75
+								-70.413	-18.346	75
+								-70.644	-17.892	75
+								-70.950	-17.488	75
+								-71.338	-17.162	75
+								-71.991	-16.809	75
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>							
+								-69.630	-21.025	80
+								-69.641	-20.934	80
+								-69.888	-19.898	80
+								-70.134	-18.861	80
+								-70.410	-18.162	80
+								-70.639	-17.750	80
+								-70.832	-17.492	80
+								-71.227	-17.129	80
+								-71.555	-16.918	80
+								-71.913	-16.748	80
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>
+								-69.472	-20.968	90
+								-69.642	-20.187	90
+								-69.811	-19.406	90
+								-70.093	-18.494	90
+								-70.455	-17.740	90
+								-70.813	-17.261	90
+								-71.172	-16.946	90
+								-71.578	-16.693	90
+								-71.742	-16.614	90
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="2.4774" bValue="0.5189" maxMag="7.2" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>			
+			<complexFaultSource
+			id="13"
+			name="Intraslab_Sup_F13"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-74.356	-14.224	90
+								-75.213	-13.357	90
+								-76.627	-11.286	90
+								-78.077	-9.148	90
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-72.052	-12.763	100
+								-72.666	-12.087	100
+								-73.068	-11.830	100
+								-73.582	-11.612	100
+								-73.858	-11.670	100
+								-74.475	-12.294	100
+								-75.267	-12.370	100
+								-75.773	-12.005	100
+								-76.695	-10.659	100
+								-77.615	-9.441	100
+								-77.863	-9.035	100
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>
+								-71.961	-12.706	105
+								-72.818	-11.791	105
+								-73.202	-11.509	105
+								-73.547	-11.348	105
+								-73.926	-11.321	105
+								-74.731	-11.839	105
+								-75.199	-11.892	105
+								-75.790	-11.608	105
+								-76.409	-10.883	105
+								-76.893	-10.232	105
+								-77.377	-9.581	105
+								-77.767	-8.984	105
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.912	-12.675	110
+								-72.285	-12.259	110
+								-72.802	-11.681	110
+								-73.104	-11.449	110
+								-73.713	-11.012	110
+								-74.330	-10.976	110
+								-75.233	-11.391	110
+								-75.921	-11.016	110
+								-76.182	-10.903	110
+								-76.731	-10.197	110
+								-77.280	-9.492	110
+								-77.630	-8.911	110
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.793	-12.599	120
+								-72.295	-12.021	120
+								-72.797	-11.443	120
+								-73.256	-11.005	120
+								-74.044	-10.340	120
+								-74.648	-10.170	120
+								-75.495	-10.372	120
+								-76.115	-10.284	120
+								-76.555	-9.944	120
+								-76.975	-9.468	120
+								-77.381	-8.780	120
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="5.1746" bValue="0.9399" maxMag="7.3" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="14"
+			name="Intraslab_Sup_F14"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.742	-16.614	90
+								-72.548	-16.227	90
+								-72.848	-16.032	90
+								-73.121	-15.800	90
+								-73.594	-15.262	90
+								-73.942	-14.776	90
+								-74.356	-14.224	90
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.601	-16.503	100
+								-72.484	-16.022	100
+								-72.770	-15.780	100
+								-73.010	-15.448	100
+								-73.006	-14.934	100
+								-72.852	-14.652	100
+								-71.959	-14.046	100
+								-71.730	-13.737	100
+								-71.680	-13.336	100
+								-71.818	-13.020	100
+								-72.052	-12.763	100
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.535	-16.451	105
+								-72.113	-16.141	105
+								-72.351	-15.981	105
+								-72.700	-15.657	105
+								-72.831	-15.401	105
+								-72.848	-15.115	105
+								-72.724	-14.859	105
+								-71.973	-14.272	105
+								-71.671	-13.900	105
+								-71.573	-13.628	105
+								-71.597	-13.251	105
+								-71.679	-13.078	105
+								-71.961	-12.706	105
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.455	-16.388	110
+								-71.987	-16.097	110
+								-72.242	-15.900	110
+								-72.462	-15.687	110
+								-72.612	-15.365	110
+								-72.622	-15.147	110
+								-72.406	-14.790	110
+								-72.095	-14.570	110
+								-71.787	-14.236	110
+								-71.543	-13.857	110
+								-71.476	-13.448	110
+								-71.611	-13.060	110
+								-71.768	-12.836	110
+								-71.912	-12.675	110
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.336	-16.293	120
+								-71.859	-15.908	120
+								-72.026	-15.736	120
+								-72.139	-15.529	120
+								-72.175	-15.292	120
+								-72.124	-15.061	120
+								-71.556	-14.297	120
+								-71.347	-13.867	120
+								-71.311	-13.472	120
+								-71.371	-13.241	120
+								-71.476	-13.026	120
+								-71.793	-12.599	120
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.2968" bValue="0.6055" maxMag="7.5" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="15"
+			name="Intraslab_Sup_F15"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-69.472	-20.968	90
+								-69.642	-20.187	90
+								-69.811	-19.406	90
+								-70.093	-18.494	90
+								-70.455	-17.740	90
+								-70.813	-17.261	90
+								-71.172	-16.946	90
+								-71.578	-16.693	90
+								-71.742	-16.614	90
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-69.310	-20.913	100
+								-69.526	-19.841	100
+								-69.877	-18.620	100
+								-70.194	-17.899	100
+								-70.535	-17.361	100
+								-70.943	-16.939	100
+								-71.395	-16.615	100
+								-71.601	-16.503	100
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-69.224	-20.884	105
+								-69.302	-20.383	105
+								-69.550	-19.363	105
+								-69.814	-18.546	105
+								-70.128	-17.851	105
+								-70.435	-17.367	105
+								-70.820	-16.943	105
+								-71.357	-16.547	105
+								-71.535	-16.451	105
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.977	-20.802	110
+								-69.060	-20.363	110
+								-69.268	-19.877	110
+								-69.619	-18.656	110
+								-69.836	-18.196	110
+								-70.383	-17.320	110
+								-70.616	-17.045	110
+								-70.902	-16.784	110
+								-71.455	-16.388	110
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.517	-20.647	120
+								-68.633	-20.207	120
+								-69.159	-19.053	120
+								-69.652	-18.237	120
+								-70.145	-17.422	120
+								-70.377	-17.101	120
+								-70.836	-16.662	120
+								-71.336	-16.293	120
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="2.0887" bValue="0.4286" maxMag="7.8" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>			
+			<complexFaultSource
+			id="18"
+			name="Intraslab_Int_F18"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.793	-12.599	120
+								-72.295	-12.021	120
+								-72.797	-11.443	120
+								-73.256	-11.005	120
+								-74.044	-10.340	120
+								-74.648	-10.170	120
+								-75.495	-10.372	120
+								-76.115	-10.284	120
+								-76.555	-9.944	120
+								-76.975	-9.468	120
+								-77.381	-8.780	120
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.677	-12.526	135
+								-71.767	-12.402	135
+								-73.308	-10.603	135
+								-74.116	-9.602	135
+								-74.396	-9.308	135
+								-74.994	-8.672	135
+								-75.176	-7.657	135
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.574	-12.461	150
+								-72.921	-10.857	150
+								-73.322	-10.326	150
+								-74.034	-9.104	150
+								-74.374	-8.345	150
+								-74.508	-7.781	150
+								-74.495	-7.310	150
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.479	-12.400	165
+								-72.491	-11.173	165
+								-73.118	-10.326	165
+								-73.603	-9.391	165
+								-73.882	-8.631	165
+								-74.012	-8.162	165
+								-74.084	-7.763	165
+								-74.140	-7.130	165
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.407	-12.355	180
+								-72.066	-11.553	180
+								-72.806	-10.571	180
+								-73.272	-9.737	180
+								-73.461	-9.224	180
+								-73.771	-8.035	180
+								-73.896	-7.005	180
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.336	-12.310	195
+								-72.139	-11.308	195
+								-72.605	-10.659	195
+								-72.861	-10.253	195
+								-73.082	-9.828	195
+								-73.304	-9.229	195
+								-73.491	-8.451	195
+								-73.734	-6.923	195
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.7913" bValue="0.6715" maxMag="7.0" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="19"
+			name="Intraslab_Int_F19"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.336	-16.293	120
+								-71.859	-15.908	120
+								-72.026	-15.736	120
+								-72.139	-15.529	120
+								-72.175	-15.292	120
+								-72.124	-15.061	120
+								-71.556	-14.297	120
+								-71.347	-13.867	120
+								-71.311	-13.472	120
+								-71.371	-13.241	120
+								-71.476	-13.026	120
+								-71.793	-12.599	120
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-71.132	-16.124	135
+								-71.257	-16.012	135
+								-71.427	-15.800	135
+								-71.556	-15.561	135
+								-71.610	-15.295	135
+								-71.596	-15.026	135
+								-71.525	-14.835	135
+								-71.207	-14.237	135
+								-71.124	-13.840	135
+								-71.140	-13.436	135
+								-71.202	-13.242	135
+								-71.329	-13.003	135
+								-71.677	-12.526	135
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.954	-15.976	150
+								-71.117	-15.778	150
+								-71.248	-15.471	150
+								-71.281	-15.137	150
+								-71.231	-14.893	150
+								-70.982	-14.276	150
+								-70.936	-13.946	150
+								-70.984	-13.533	150
+								-71.123	-13.140	150
+								-71.281	-12.848	150
+								-71.574	-12.461	150
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>							
+								-70.773	-15.826	165
+								-70.890	-15.631	165
+								-70.965	-15.399	165
+								-70.981	-15.156	165
+								-70.794	-14.368	165
+								-70.773	-14.045	165
+								-70.842	-13.645	165
+								-71.003	-13.186	165
+								-71.146	-12.895	165
+								-71.479	-12.400	165
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-70.580	-15.667	180
+								-70.686	-15.366	180
+								-70.626	-14.412	180
+								-70.648	-14.004	180
+								-70.743	-13.604	180
+								-70.891	-13.222	180
+								-71.111	-12.798	180
+								-71.407	-12.355	180
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-69.852	-15.063	225
+								-70.249	-14.566	210
+								-70.497	-14.103	195
+								-70.627	-13.641	195
+								-70.811	-13.198	195
+								-71.290	-12.368	195
+								-71.336	-12.310	195
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="2.5499" bValue="0.5075" maxMag="7.2" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="20"
+			name="Intraslab_Int_F20"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.517	-20.647	120
+								-68.633	-20.207	120
+								-69.159	-19.053	120
+								-69.652	-18.237	120
+								-70.145	-17.422	120
+								-70.377	-17.101	120
+								-70.836	-16.662	120
+								-71.336	-16.293	120
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.247	-20.549	135
+								-68.549	-19.724	135
+								-68.702	-18.927	135
+								-68.990	-18.320	135
+								-69.636	-17.724	135
+								-70.348	-16.820	135
+								-71.132	-16.124	135
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.078	-20.487	150
+								-68.368	-19.663	150
+								-68.517	-18.256	150
+								-68.748	-17.831	150
+								-69.536	-17.369	150
+								-70.175	-16.714	150
+								-70.954	-15.976	150
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.917	-20.428	165
+								-68.194	-19.658	165
+								-68.285	-18.121	165
+								-68.472	-17.591	165
+								-69.325	-17.141	165
+								-69.780	-16.801	165
+								-70.773	-15.826	165
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.727	-20.359	180
+								-67.992	-19.654	180
+								-68.091	-18.909	180
+								-68.092	-18.021	180
+								-68.314	-17.379	180
+								-68.641	-17.135	180
+								-69.149	-16.933	180
+								-69.504	-16.728	180
+								-70.241	-16.116	180
+								-70.580	-15.667	180
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>	
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>
+								-67.545	-20.292	195
+								-67.820	-19.500	195
+								-67.873	-19.104	195
+								-67.913	-18.146	195
+								-68.032	-17.597	195
+								-68.171	-17.311	195
+								-68.440	-17.015	195
+								-69.150	-16.653	195
+								-69.552	-16.391	195
+								-70.044	-15.983	195
+								-70.369	-15.491	195
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.332	-20.214	210
+								-67.581	-19.534	210
+								-67.656	-19.097	210
+								-67.701	-18.118	210
+								-67.772	-17.863	210
+								-67.949	-17.454	210
+								-68.118	-17.142	210
+								-68.285	-16.935	210
+								-69.396	-16.199	210
+								-69.889	-15.687	210
+								-70.088	-15.258	210
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.063	-20.116	225
+								-67.391	-19.323	225
+								-67.439	-19.001	225
+								-67.466	-18.266	225
+								-67.519	-18.026	225
+								-67.610	-17.800	225
+								-67.955	-17.150	225
+								-68.189	-16.817	225
+								-68.472	-16.523	225
+								-68.961	-16.091	225
+								-69.388	-15.712	225
+								-69.751	-15.270	225
+								-69.852	-15.063	225
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.5516" bValue="0.6392" maxMag="6.9" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+			<complexFaultSource
+			id="21"
+			name="Intraslab_Prof_F21"
+			tectonicRegion="Subduction Intraslab"
+			>
+				<complexFaultGeometry>
+					<faultTopEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.961	-16.091	225
+								-69.388	-15.712	225
+								-69.751	-15.270	225
+								-69.852	-15.063	225
+								-70.249	-14.566	210
+								-70.497	-14.103	195
+								-70.627	-13.641	195
+								-70.811	-13.198	195
+								-71.290	-12.368	195
+								-71.336	-12.310	195
+							</gml:posList>
+						</gml:LineString>
+					</faultTopEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.740	-15.879	240
+								-69.339	-15.232	240
+								-69.722	-14.720	240
+								-69.997	-14.263	240
+								-70.474	-13.309	240
+								-70.739	-12.848	240
+								-71.192	-12.218	240
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-68.392	-15.546	270
+								-68.795	-15.078	270
+								-69.540	-14.414	270
+								-69.999	-13.852	270
+								-70.614	-12.846	270
+								-71.090	-12.154	270
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>
+								-68.094	-15.261	300
+								-68.274	-15.081	300
+								-69.013	-14.542	300
+								-69.786	-13.888	300
+								-69.978	-13.652	300
+								-70.571	-12.707	300
+								-70.992	-12.091	300
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.653	-14.839	360
+								-68.603	-14.392	360
+								-69.021	-14.165	360
+								-69.495	-13.843	360
+								-69.772	-13.581	360
+								-69.945	-13.353	360
+								-70.445	-12.542	360
+								-70.829	-11.988	360
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>	
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.379	-14.577	420
+								-67.771	-14.373	420
+								-68.507	-14.170	420
+								-68.768	-14.058	420
+								-69.338	-13.707	420
+								-69.627	-13.460	420
+								-69.925	-13.086	420
+								-70.298	-12.503	420
+								-70.686	-11.897	420
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>
+					<intermediateEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.196	-14.402	480
+								-67.445	-14.205	480
+								-67.776	-14.054	480
+								-68.407	-13.954	480
+								-68.755	-13.845	480
+								-69.163	-13.635	480
+								-69.443	-13.404	480
+								-69.847	-12.911	480
+								-70.192	-12.359	480
+								-70.540	-11.804	480
+							</gml:posList>
+						</gml:LineString>
+					</intermediateEdge>					
+					<faultBottomEdge>
+						<gml:LineString>
+							<gml:posList>								
+								-67.048	-14.260	540
+								-67.731	-13.824	540
+								-68.500	-13.705	540
+								-68.863	-13.571	540
+								-69.196	-13.364	540
+								-69.424	-13.180	540
+								-69.733	-12.807	540
+								-70.380	-11.703	540
+							</gml:posList>
+						</gml:LineString>
+					</faultBottomEdge>
+				</complexFaultGeometry>
+				<magScaleRel>
+					WC1994
+				</magScaleRel>
+				<ruptAspectRatio>
+					1.0
+				</ruptAspectRatio>
+				<truncGutenbergRichterMFD aValue="3.2195" bValue="0.7166" maxMag="8.2" minMag="4.5"/>
+				<rake>
+					90.0
+				</rake>
+			</complexFaultSource>
+		</sourceGroup>
+		
+        <sourceGroup
+        name="group 3"
+        tectonicRegion="Stable Continental Crust"
+        >
+			<areaSource
+            id="27"
+            name="Crustal_F27"
+            tectonicRegion="Stable Continental Crust"
+            >
+                <areaGeometry>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>
+									-76.798	-7.591
+									-77.235	-7.755
+									-76.418	-9.428
+									-75.333	-11.740
+									-75.173	-12.159
+									-74.388	-12.760
+									-73.247	-10.881
+									-74.979	-8.751
+									-75.414	-7.071									
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <upperSeismoDepth>
+                        10.0
+                    </upperSeismoDepth>
+                    <lowerSeismoDepth>
+                        40.0
+                    </lowerSeismoDepth>
+                </areaGeometry>
+                <magScaleRel>
+                    WC1994
+                </magScaleRel>
+                <ruptAspectRatio>
+                    1.0
+                </ruptAspectRatio>
+                <truncGutenbergRichterMFD aValue="4.2526" bValue="0.9056" maxMag="6.3" minMag="4.5"/>
+                <nodalPlaneDist>
+                    <nodalPlane dip="90.0" probability="1.0" rake="0.0" strike="0.0"/>
+                </nodalPlaneDist>
+                <hypoDepthDist>
+                    <hypoDepth depth="40.0" probability="1.0"/>
+                </hypoDepthDist>
+            </areaSource>
+			<areaSource
+            id="28"
+            name="Crustal_F28"
+            tectonicRegion="Stable Continental Crust"
+            >
+                <areaGeometry>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>									
+									-75.809	-9.520
+									-75.765	-10.473
+									-75.075	-11.117
+									-74.417	-11.619
+									-74.006	-11.900
+									-73.400	-12.245
+									-72.816	-11.603
+									-73.779	-10.830
+									-74.374	-10.019
+									-75.410	-9.245
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <upperSeismoDepth>
+                        10.0
+                    </upperSeismoDepth>
+                    <lowerSeismoDepth>
+                        40.0
+                    </lowerSeismoDepth>
+                </areaGeometry>
+                <magScaleRel>
+                    WC1994
+                </magScaleRel>
+                <ruptAspectRatio>
+                    1.0
+                </ruptAspectRatio>
+                <truncGutenbergRichterMFD aValue="3.1042" bValue="0.6264" maxMag="6.7" minMag="4.5"/>
+                <nodalPlaneDist>
+                    <nodalPlane dip="90.0" probability="1.0" rake="0.0" strike="0.0"/>
+                </nodalPlaneDist>
+                <hypoDepthDist>
+                    <hypoDepth depth="40.0" probability="1.0"/>
+                </hypoDepthDist>
+            </areaSource>
+			<areaSource
+            id="29"
+            name="Crustal_F29"
+            tectonicRegion="Stable Continental Crust"
+            >
+                <areaGeometry>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>									
+									-74.231	-14.922
+									-72.337	-16.491
+									-71.434	-17.384
+									-70.445	-17.931
+									-69.600	-17.136
+									-72.230	-14.748
+									-73.861	-14.267
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <upperSeismoDepth>
+                        10.0
+                    </upperSeismoDepth>
+                    <lowerSeismoDepth>
+                        40.0
+                    </lowerSeismoDepth>
+                </areaGeometry>
+                <magScaleRel>
+                    WC1994
+                </magScaleRel>
+                <ruptAspectRatio>
+                    1.0
+                </ruptAspectRatio>
+                <truncGutenbergRichterMFD aValue="3.0262" bValue="0.6735" maxMag="6.2" minMag="4.5"/>
+                <nodalPlaneDist>
+                    <nodalPlane dip="90.0" probability="1.0" rake="0.0" strike="0.0"/>
+                </nodalPlaneDist>
+                <hypoDepthDist>
+                    <hypoDepth depth="40.0" probability="1.0"/>
+                </hypoDepthDist>
+            </areaSource>
+			<areaSource
+            id="30"
+            name="Crustal_F30"
+            tectonicRegion="Stable Continental Crust"
+            >
+                <areaGeometry>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>									
+									-72.805	-13.636
+									-72.049	-14.114
+									-71.238	-15.465
+									-69.753	-16.266
+									-69.071	-14.925
+									-70.948	-13.827
+									-72.413	-13.049
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <upperSeismoDepth>
+                        10.0
+                    </upperSeismoDepth>
+                    <lowerSeismoDepth>
+                        40.0
+                    </lowerSeismoDepth>
+                </areaGeometry>
+                <magScaleRel>
+                    WC1994
+                </magScaleRel>
+                <ruptAspectRatio>
+                    1.0
+                </ruptAspectRatio>
+                <truncGutenbergRichterMFD aValue="3.8038" bValue="0.8616" maxMag="6.2" minMag="4.5"/>
+                <nodalPlaneDist>
+                    <nodalPlane dip="90.0" probability="1.0" rake="0.0" strike="0.0"/>
+                </nodalPlaneDist>
+                <hypoDepthDist>
+                    <hypoDepth depth="40.0" probability="1.0"/>
+                </hypoDepthDist>
+            </areaSource>
+			<areaSource
+            id="31"
+            name="Crustal_F31"
+            tectonicRegion="Stable Continental Crust"
+            >
+                <areaGeometry>
+                    <gml:Polygon>
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList>											
+									-72.703	-12.034
+									-72.474	-12.408
+									-71.364	-13.119
+									-68.832	-14.445
+									-68.362	-13.505
+									-72.522	-11.492
+                                </gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <upperSeismoDepth>
+                        10.0
+                    </upperSeismoDepth>
+                    <lowerSeismoDepth>
+                        40.0
+                    </lowerSeismoDepth>
+                </areaGeometry>
+                <magScaleRel>
+                    WC1994
+                </magScaleRel>
+                <ruptAspectRatio>
+                    1.0000000E+00
+                </ruptAspectRatio>
+                <truncGutenbergRichterMFD aValue="3.4613" bValue="0.7857" maxMag="6.5" minMag="4.5"/>
+                <nodalPlaneDist>
+                    <nodalPlane dip="90.0" probability="1.0" rake="0.0" strike="0.0"/>
+                </nodalPlaneDist>
+                <hypoDepthDist>
+                    <hypoDepth depth="40.0" probability="1.0"/>
+                </hypoDepthDist>
+            </areaSource>
+
+		</sourceGroup>						
+		
+    </sourceModel>
+	
+</nrml>

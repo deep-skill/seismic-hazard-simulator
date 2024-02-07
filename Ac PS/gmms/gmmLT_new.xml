@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nrml>
+  <logicTree logicTreeID="lt_gmm">
+      <logicTreeBranchSet
+      applyToTectonicRegionType="Active Shallow Crust"
+      branchSetID="asc"
+      uncertaintyType="gmpeModel"
+      >
+           <logicTreeBranch branchID="ASK_FastAtt">
+                  <uncertaintyModel>
+                  [AbrahamsonEtAl2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="ASK_centralAtt">
+                  <uncertaintyModel>
+                  [AbrahamsonEtAl2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="ASK_slowAtt">
+                  <uncertaintyModel>
+                  [AbrahamsonEtAl2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="BA_FastAtt">
+                  <uncertaintyModel>
+                  [BooreEtAl2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="BA_centralAtt">
+                  <uncertaintyModel>
+                  [BooreEtAl2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="BA_slowAtt">
+                  <uncertaintyModel>
+                  [BooreEtAl2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CB_FastAtt">
+                  <uncertaintyModel>
+                  [CampbellBozorgnia2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CB_centralAtt">
+                  <uncertaintyModel>
+                  [CampbellBozorgnia2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CB_slowAtt">
+                  <uncertaintyModel>
+                  [CampbellBozorgnia2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CY_FastAtt">
+                  <uncertaintyModel>
+                  [ChiouYoungs2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CY_centralAtt">
+                  <uncertaintyModel>
+                  [ChiouYoungs2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CY_slowAtt">
+                  <uncertaintyModel>
+                  [ChiouYoungs2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+      </logicTreeBranchSet>
+
+    <logicTreeBranchSet branchSetID="interface" uncertaintyType="gmpeModel" applyToTectonicRegionType="Subduction Interface">
+            <logicTreeBranch branchID="b_01_01">
+            <uncertaintyModel>
+                  [AG2020SInterBCHydro15]
+                   region="SAM"
+                   
+                   factor=-0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0576</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_02">
+            <uncertaintyModel>
+                  [AG2020SInterBCHydro15]
+                   region="SAM"
+                   
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.1728</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_03">
+            <uncertaintyModel>
+                  [AG2020SInterBCHydro15]
+                   region="SAM"
+                   
+                   factor=0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0576</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_01_04">
+            <uncertaintyModel>
+                  [KBCG2020SInterBCHydro15SAS]
+                   
+                   factor=-0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0288</uncertaintyWeight>
+            </logicTreeBranch>
+                  <logicTreeBranch branchID="b_01_05">
+            <uncertaintyModel>
+                  [KBCG2020SInterBCHydro15SAS]
+                   
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0864</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_06">
+            <uncertaintyModel>
+                  [KBCG2020SInterBCHydro15SAS]
+                   
+                   factor=0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0288</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_01_07">
+            <uncertaintyModel>
+                  [KBCG2020SInterBCHydro15SAN]
+                   
+                   factor=-0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0192</uncertaintyWeight>
+            </logicTreeBranch>
+                  <logicTreeBranch branchID="b_01_08">
+            <uncertaintyModel>
+                  [KBCG2020SInterBCHydro15SAN]
+                   
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0576</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_09">
+            <uncertaintyModel>
+                  [KBCG2020SInterBCHydro15SAN]
+                   
+                   factor=0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0192</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_01_10">
+            <uncertaintyModel>
+                  [PK2020SInterBCHydro15SAS]
+                   
+                   factor=-0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.02304</uncertaintyWeight>
+            </logicTreeBranch>
+                  <logicTreeBranch branchID="b_01_11">
+            <uncertaintyModel>
+                  [PK2020SInterBCHydro15SAS]
+                   
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.06912</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_12">
+            <uncertaintyModel>
+                  [PK2020SInterBCHydro15SAS]
+                   
+                   factor=0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.02304</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_01_13">
+            <uncertaintyModel>
+                  [PK2020SInterBCHydro15SAN]
+                   
+                   factor=-0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.01536</uncertaintyWeight>
+            </logicTreeBranch>
+                  <logicTreeBranch branchID="b_01_14">
+            <uncertaintyModel>
+                  [PK2020SInterBCHydro15SAN]
+                   
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.04608</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_15">
+            <uncertaintyModel>
+                  [PK2020SInterBCHydro15SAN]
+                   
+                   factor=0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.01536</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_01_16">
+            <uncertaintyModel>
+                  [MontalvaEtAl2017SInterBCHydro15]
+                   
+                   factor=-0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.016</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_17">
+            <uncertaintyModel>
+                  [MontalvaEtAl2017SInterBCHydro15]
+                   
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.048</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_18">
+            <uncertaintyModel>
+                  [MontalvaEtAl2017SInterBCHydro15]
+                   
+                   factor=0.1
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.016</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_02_01">
+            <uncertaintyModel>
+                  [AbrahamsonGulerce2020SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.072</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_02_02">
+            <uncertaintyModel>
+                  [KuehnEtAl2020SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.06</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_02_03">
+            <uncertaintyModel>
+                  [ParkerEtAl2020SInter] 
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.048</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_02_04">
+            <uncertaintyModel>
+                  [MontalvaEtAl2017SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.02</uncertaintyWeight>
+            </logicTreeBranch>
+      </logicTreeBranchSet>
+
+
+
+    <logicTreeBranchSet branchSetID="inslab" uncertaintyType="gmpeModel" applyToTectonicRegionType="Subduction Intraslab">
+            <logicTreeBranch branchID="b_03_01">
+                  <uncertaintyModel>
+                  [AG2020SSlabBCHydro15]
+                  
+                  factor=-0.1
+                  adjustment='true'
+                  fine_region='antapaccay'
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.0232</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_02">
+                  <uncertaintyModel>
+                  [AG2020SSlabBCHydro15]
+                  
+                  adjustment='true'
+                  fine_region='antapaccay'
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.0696</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_03">
+                  <uncertaintyModel>
+                  [AG2020SSlabBCHydro15]
+                  
+                  factor=0.1
+                  adjustment='true'
+                  fine_region='antapaccay'
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.0232</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_03_04">
+                  <uncertaintyModel>
+                  [AG2020SSlabBCHydro15]
+                  
+                  factor=-0.1
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.0058</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_05">
+                  <uncertaintyModel>
+                  [AG2020SSlabBCHydro15]
+                  
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.0174</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_06">
+                  <uncertaintyModel>
+                  [AG2020SSlabBCHydro15]
+                  
+                  factor=0.1
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.0058</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_03_07">
+                  <uncertaintyModel>
+                        [KBCG2020SSlabBCHydro15SAS]
+                        
+                        factor=-0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0168</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_08">
+                  <uncertaintyModel>
+                        [KBCG2020SSlabBCHydro15SAS]
+                        
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0504</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_09">
+                  <uncertaintyModel>
+                        [KBCG2020SSlabBCHydro15SAS]
+                        
+                        factor=0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0168</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_03_10">
+                  <uncertaintyModel>
+                        [KBCG2020SSlabBCHydro15SAN]
+                        
+                        factor=-0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0112</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_11">
+                  <uncertaintyModel>
+                        [KBCG2020SSlabBCHydro15SAN]
+                        
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0336</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_12">
+                  <uncertaintyModel>
+                        [KBCG2020SSlabBCHydro15SAN]
+                        
+                        factor=0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0112</uncertaintyWeight>
+            </logicTreeBranch>
+
+
+            <logicTreeBranch branchID="b_03_13">
+                  <uncertaintyModel>
+                        [PK2020SSlabBCHydro15SAS]
+                        
+                        factor=-0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0168</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_14">
+                  <uncertaintyModel>
+                        [PK2020SSlabBCHydro15SAS]
+                        
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0504</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_15">
+                  <uncertaintyModel>
+                        [PK2020SSlabBCHydro15SAS]
+                        
+                        factor=0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0168</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_03_16">
+                  <uncertaintyModel>
+                        [PK2020SSlabBCHydro15SAN]
+                        
+                        factor=-0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0112</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_17">
+                  <uncertaintyModel>
+                        [PK2020SSlabBCHydro15SAN]
+                        
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0336</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_18">
+                  <uncertaintyModel>
+                        [PK2020SSlabBCHydro15SAN]
+                        
+                        factor=0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.0112</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_03_19">
+                  <uncertaintyModel>
+                        [MontalvaEtAl2017SSlabBCHydro15]
+                        
+                        factor=-0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.015</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_20">
+                  <uncertaintyModel>
+                        [MontalvaEtAl2017SSlabBCHydro15]
+                        
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.045</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_03_21">
+                  <uncertaintyModel>
+                        [MontalvaEtAl2017SSlabBCHydro15]
+                        
+                        factor=0.1
+                        </uncertaintyModel>
+                  <uncertaintyWeight>0.015</uncertaintyWeight>
+            </logicTreeBranch>
+
+            <logicTreeBranch branchID="b_04_01">
+                  <uncertaintyModel>
+                  [AbrahamsonGulerce2020SSlab]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.145</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_04_02">
+                  <uncertaintyModel>
+                  [KuehnEtAl2020SSlab]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.14</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_04_03">
+                  <uncertaintyModel>
+                  [ParkerEtAl2020SSlab]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.14</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_04_04">
+                  <uncertaintyModel>
+                  [MontalvaEtAl2017SSlab]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>0.075</uncertaintyWeight>
+            </logicTreeBranch>
+
+    </logicTreeBranchSet>
+  </logicTree>
+</nrml>

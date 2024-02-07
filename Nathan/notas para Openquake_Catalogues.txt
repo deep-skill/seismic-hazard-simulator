@@ -1,0 +1,11 @@
+This code is the one to use for assessing completeness and declustering the combined catalogue. It will produce the Stepp and slope method figures Erin mentioned. It also has some steps to produce other plots (depth histograms, magnitude-time density figures, etc.)
+Note that this code typically imports the WSP GitHub Python codes, which I know you do not have access to yet. I have commented these lines out of the code, because I don't think they are required to do the completeness and declustering analysis. If you get an error because of that, let me know and I can share the relevant WSP Python codes with you 
+Next steps for the earthquake catalogue:
+Re-order the catalogues in Jupyter prepare_catalogues.ipynb (IGP, SARA, CSN-UTC, GCMT, ISC-GEM, GEM Historic, ANSS)
+Run the Jupyter notebook to this step: 
+isf_to_oq_csv(cat_merged_container[0], os.path.join(topdir,'full_catalogue','LT_UpdatedFullCat_DupFlag_v2.csv'))
+Open the CSV file in Excel, filter to the rows with magnitude Mw 6.5+
+Manually check the Mw 6.5+ earthquakes to confirm that the duplicates are 'flagged' correctly. Add 'flagged' next to any earthquakes which you think should be removed.
+Go back to Jupyter (prepare_catalogues.ipynb) and run this cell: purge_duplicates(os.path.join(topdir,'full_catalogue','LT_UpdatedFullCat_DupFlag_v2.csv'),os.path.join(topdir,'full_catalogue','LT_UpdatedFullCat_DupPurged_v2.csv'))
+Now you have the full earthquake catalogue
+Use the OpenQuake_Catalogue.ipynb Jupyter notebook to analyze the catalogue completeness and decluster the catalogue, using the '_DupPurged.csv' full catalogue you created previously.

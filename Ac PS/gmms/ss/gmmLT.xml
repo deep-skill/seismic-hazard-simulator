@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nrml>
+  <logicTree logicTreeID="lt_gmm">
+      <logicTreeBranchSet
+      applyToTectonicRegionType="Active Shallow Crust"
+      branchSetID="asc"
+      uncertaintyType="gmpeModel"
+      >
+            <logicTreeBranch branchID="ASK_FastAtt">
+                  <uncertaintyModel>
+                  [AbrahamsonEtAl2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="ASK_centralAtt">
+                  <uncertaintyModel>
+                  [AbrahamsonEtAl2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="ASK_slowAtt">
+                  <uncertaintyModel>
+                  [AbrahamsonEtAl2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="BA_FastAtt">
+                  <uncertaintyModel>
+                  [BooreEtAl2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="BA_centralAtt">
+                  <uncertaintyModel>
+                  [BooreEtAl2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="BA_slowAtt">
+                  <uncertaintyModel>
+                  [BooreEtAl2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CB_FastAtt">
+                  <uncertaintyModel>
+                  [CampbellBozorgnia2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CB_centralAtt">
+                  <uncertaintyModel>
+                  [CampbellBozorgnia2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CB_slowAtt">
+                  <uncertaintyModel>
+                  [CampbellBozorgnia2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CY_FastAtt">
+                  <uncertaintyModel>
+                  [ChiouYoungs2014]
+                  sigma_mu_epsilon = -1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CY_centralAtt">
+                  <uncertaintyModel>
+                  [ChiouYoungs2014]
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.1575
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="CY_slowAtt">
+                  <uncertaintyModel>
+                  [ChiouYoungs2014]
+                  sigma_mu_epsilon = 1.645
+                  </uncertaintyModel>
+                  <uncertaintyWeight>
+                        0.04625
+                  </uncertaintyWeight>
+            </logicTreeBranch>
+      </logicTreeBranchSet>
+
+    <logicTreeBranchSet branchSetID="interface" uncertaintyType="gmpeModel" applyToTectonicRegionType="Subduction Interface">
+            <logicTreeBranch branchID="b_01_04">
+            <uncertaintyModel>
+                  [AbrahamsonGulerce2020SInter]
+                  region="SAM"
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.288</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_05">
+            <uncertaintyModel>
+                  [KuehnEtAl2020SInterSAS]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.144</uncertaintyWeight>
+            </logicTreeBranch>
+                  <logicTreeBranch branchID="b_01_06">
+            <uncertaintyModel>
+                  [KuehnEtAl2020SInterSAN]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.096</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_07">
+            <uncertaintyModel>
+                  [ParkerEtAl2020SInterSAS]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.1152</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_08">
+            <uncertaintyModel>
+                  [ParkerEtAl2020SInterSAN]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.0768</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_09">
+            <uncertaintyModel>
+                  [MontalvaEtAl2017SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.08</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_02_04">
+            <uncertaintyModel>
+                  [AbrahamsonGulerce2020SInter]
+                  region="GLO"
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.072</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_02_05">
+            <uncertaintyModel>
+                  [KuehnEtAl2020SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.06</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_02_06">
+            <uncertaintyModel>
+                  [ParkerEtAl2020SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.048</uncertaintyWeight>
+            </logicTreeBranch>
+            <logicTreeBranch branchID="b_02_07">
+            <uncertaintyModel>
+                  [MontalvaEtAl2017SInter]
+                  </uncertaintyModel>
+            <uncertaintyWeight>0.02</uncertaintyWeight>
+            </logicTreeBranch>
+      </logicTreeBranchSet>
+
+
+
+    <logicTreeBranchSet branchSetID="inslab" uncertaintyType="gmpeModel" applyToTectonicRegionType="Subduction Intraslab">
+      <logicTreeBranch branchID="b_01_10">
+	<uncertaintyModel>
+          [AbrahamsonGulerce2020SSlab_wAdj]
+          region="SAM"
+        </uncertaintyModel>
+	<uncertaintyWeight>0.116</uncertaintyWeight>
+      </logicTreeBranch>
+            <logicTreeBranch branchID="b_01_11">
+	<uncertaintyModel>
+          [AbrahamsonGulerce2020SSlab]
+          region="SAM"
+        </uncertaintyModel>
+	<uncertaintyWeight>0.029</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_01_12">
+	<uncertaintyModel>
+          [KuehnEtAl2020SSlabSAS]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.084</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_01_13">
+	<uncertaintyModel>
+          [KuehnEtAl2020SSlabSAN]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.056</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_01_14">
+	<uncertaintyModel>
+          [ParkerEtAl2020SSlabSAS]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.084</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_01_15">
+	<uncertaintyModel>
+          [ParkerEtAl2020SSlabSAN]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.056</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_01_16">
+	<uncertaintyModel>
+          [MontalvaEtAl2017SSlab]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.075</uncertaintyWeight>
+      </logicTreeBranch>
+
+      <logicTreeBranch branchID="b_02_08">
+	<uncertaintyModel>
+          [AbrahamsonGulerce2020SSlab]
+          region="GLO"
+        </uncertaintyModel>
+	<uncertaintyWeight>0.145</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_02_09">
+	<uncertaintyModel>
+          [KuehnEtAl2020SSlab]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.14</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_02_10">
+	<uncertaintyModel>
+          [ParkerEtAl2020SSlab]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.14</uncertaintyWeight>
+      </logicTreeBranch>
+      <logicTreeBranch branchID="b_02_11">
+	<uncertaintyModel>
+          [MontalvaEtAl2017SSlab]
+        </uncertaintyModel>
+	<uncertaintyWeight>0.075</uncertaintyWeight>
+      </logicTreeBranch>
+
+
+    </logicTreeBranchSet>
+  </logicTree>
+</nrml>

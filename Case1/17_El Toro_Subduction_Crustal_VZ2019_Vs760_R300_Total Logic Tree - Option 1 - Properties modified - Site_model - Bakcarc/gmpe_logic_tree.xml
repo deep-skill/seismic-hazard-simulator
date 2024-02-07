@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+    <logicTree logicTreeID='lt1'>
+
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs1"
+                    applyToTectonicRegionType="Subduction Interface">
+				
+				<logicTreeBranch branchID="b11">
+ <uncertaintyModel>MontalvaEtAl2017SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>
+				
+				<logicTreeBranch branchID="b12">
+ <uncertaintyModel>AbrahamsonGulerce2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.30</uncertaintyWeight>
+                </logicTreeBranch>							
+				
+				<logicTreeBranch branchID="b13">
+ <uncertaintyModel>ParkerEtAl2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.15</uncertaintyWeight>
+                </logicTreeBranch>
+				
+				<logicTreeBranch branchID="b14">
+ <uncertaintyModel>KuehnEtAl2020SInter</uncertaintyModel>
+                    <uncertaintyWeight>0.35</uncertaintyWeight>
+                </logicTreeBranch>				
+            </logicTreeBranchSet>		
+
+
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs2"
+                    applyToTectonicRegionType="Subduction Intraslab">
+				
+                <logicTreeBranch branchID="b21">
+ <uncertaintyModel>MontalvaEtAl2017SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>
+				
+                <logicTreeBranch branchID="b22">
+ <uncertaintyModel>AbrahamsonGulerce2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.30</uncertaintyWeight>
+                </logicTreeBranch>
+				
+                <logicTreeBranch branchID="b23">
+ <uncertaintyModel>ParkerEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.15</uncertaintyWeight>
+                </logicTreeBranch>
+				
+                <logicTreeBranch branchID="b24">
+ <uncertaintyModel>KuehnEtAl2020SSlab</uncertaintyModel>
+                    <uncertaintyWeight>0.35</uncertaintyWeight>
+                </logicTreeBranch>				
+            </logicTreeBranchSet>
+
+
+            <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs3"
+                    applyToTectonicRegionType="Stable Continental Crust">
+                
+				<logicTreeBranch branchID="b31">
+ <uncertaintyModel>BooreEtAl2014</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>
+				
+                <logicTreeBranch branchID="b32">
+ <uncertaintyModel>AbrahamsonEtAl2014</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>
+				
+                <logicTreeBranch branchID="b33">
+ <uncertaintyModel>CampbellBozorgnia2014</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>
+				
+                <logicTreeBranch branchID="b34">
+ <uncertaintyModel>ChiouYoungs2014</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>
+						
+                <logicTreeBranch branchID="b35">
+ <uncertaintyModel>Idriss2014</uncertaintyModel>
+                    <uncertaintyWeight>0.20</uncertaintyWeight>
+                </logicTreeBranch>				
+            </logicTreeBranchSet>
+
+    </logicTree>
+</nrml>
