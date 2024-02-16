@@ -185,7 +185,7 @@ for coord in range(n_coord):
 
     #ax.set_ylim(0.0001, 1)
     #ax.set_yticks([0.0001, 0.001, 0.01, 0.1, 1])
-    ax.set_ylabel('Probabilidad de excedencia')
+    ax.set_ylabel('Aceleración espectral (g)')
 
     ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
     ax.get_yaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
