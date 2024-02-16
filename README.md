@@ -26,37 +26,37 @@ Ahora crearemos un entorno virtual, que nos permitirá instalar paquetes de Pyth
 
 2. **Navegar a la ubicación de la carpeta:** Nos vamos a dirigir a la ubicación donde queramos crear el entorno virutal. Utilizaremos el comando cd (cambiar directorio) seguido de la ruta de la carpeta. Por ejemplo:
 
-```bash
-cd ruta\de\la\carpeta
-```
+    ```bash
+    cd ruta\de\la\carpeta
+    ```
 
 3. **Instalar virtualenv (si no está instalado):** Es posible que necesites instalar `virtualenv`, una herramienta que te permite crear entornos virtuales. Puedes instalarlo utilizando el siguiente comando:
 
-```bash
-python3 - m pip install virtualenv
-```
+    ```bash
+    python3 - m pip install virtualenv
+    ```
 
 4. **Crear un nuevo entorno virtual:** Encóntrandonos en la ubicación del proyecto, ejecutaremos el siguiente comando para crear un nuevo entorno virtual:
 
-```bash
-virtualenv nombre_del_entorno
-```
+    ```bash
+    virtualenv nombre_del_entorno
+    ```
 
     Reemplaza `nombre_del_entorno` con el nombre que desees para tu entorno virtual. Por lo general le daremos el nombre de ".env" al entorno (poner un punto al inicio del nombre hará que la carpeta del entorno virtual esté oculta, y así no obstruir con los archivos del proyecto).
 
 5. **Activar el entorno virtual:** Después de crear el entorno virtual, necesitas activarlo. Esto asegura que cuando instales paquetes o ejecutes scripts, se hagan dentro del entorno virtual y no afecten al sistema global. Para activar el entorno virtual, ejecuta el siguiente comando:
 
-```bash
-nombre_del_entorno\Scripts\activate
-```
+    ```bash
+    nombre_del_entorno\Scripts\activate
+    ```
 
     Nota: Reemplaza "nombre_del_entorno" con el nombre que hayas elegido para tu entorno virtual.
 
 6. **Desactivar el entorno virtual:** Cuando hayas terminado de trabajar en tu proyecto y quieras salir del entorno virtual, simplemente ejecuta el siguiente comando:
 
-```bash
-deactivate
-```
+    ```bash
+    deactivate
+    ```
 
 ## 3. Instalación de paquetes de Python
 
@@ -66,21 +66,21 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
 
 2. **Navegar a la ubicación del entorno virtual:** Usamos el comando cd seguido de la ruta de la carpeta del entorno virtual. 
     
-```bash
-cd ruta\de\la\carpeta\del\entorno\virtual
-```
+    ```bash
+    cd ruta\de\la\carpeta\del\entorno\virtual
+    ```
 
 3. **Activar el entorno virtual:** Para activar el entorno virtual, ejecuta el siguiente comando:
 
-```bash
-nombre_del_entorno\Scripts\activate
-```
+    ```bash
+    nombre_del_entorno\Scripts\activate
+    ```
 
 4. **Instalación de paquetes:** Copiamos el archivo requirements.txt en la ubicación del proyecto. Ejecutamos el siguiente comando en el símbolo del sistema
     
-```bash
-python3 - m pip install -r requirements.txt
-```
+    ```bash
+    python3 - m pip install -r requirements.txt
+    ```
 
 # Ejecución
 
@@ -94,9 +94,9 @@ python3 - m pip install -r requirements.txt
 
 4. **Ejecución del archivo:** Abrimos el script con el siguiente comando:
 
-```bash
-jupyter notebook SeismicHazard.ipynb
-```
+    ```bash
+    jupyter notebook SeismicHazard.ipynb
+    ```
     Se abrirá el archivo en su navegador por defecto. Dar click en el botón "Run" para ejecutar el script.
 
 5. **Salidas del proyecto:** Luego de que termine la ejecución del script, se generará la carpeta llamada "output", donde encontrará los datos, las gráficas, las tablas, etc.
