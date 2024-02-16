@@ -24,10 +24,10 @@ Ahora crearemos un entorno virtual, que nos permitirá instalar paquetes de Pyth
 
 1. **Abrir el símbolo del sistema:** Igual que antes, abre el menú de inicio y busca "cmd" para abrir el símbolo del sistema.
 
-2. **Navegar a la ubicación de la carpeta:** Nos vamos a dirigir a la ubicación donde queramos crear el entorno virutal. Utilizaremos el comando cd (cambiar directorio) seguido de la ruta de la carpeta. Por ejemplo:
+2. **Navegar a la ubicación de la carpeta del Generador:** Nos vamos a dirigir a la ubicación de la carpeta Generador. Utilizaremos el comando cd (cambiar directorio) seguido de la ruta de la carpeta. Por ejemplo:
 
     ```bash
-    cd ruta\de\la\carpeta
+    cd ruta\de\la\carpeta\Generador
     ```
 
 3. **Instalar virtualenv (si no está instalado):** Es posible que necesites instalar `virtualenv`, una herramienta que te permite crear entornos virtuales. Puedes instalarlo utilizando el siguiente comando:
@@ -36,7 +36,7 @@ Ahora crearemos un entorno virtual, que nos permitirá instalar paquetes de Pyth
     python3 - m pip install virtualenv
     ```
 
-4. **Crear un nuevo entorno virtual:** Encóntrandonos en la ubicación del proyecto, ejecutaremos el siguiente comando para crear un nuevo entorno virtual:
+4. **Crear un nuevo entorno virtual:** Encóntrandonos en la ubicación de la carpeta, ejecutaremos el siguiente comando para crear un nuevo entorno virtual:
 
     ```bash
     virtualenv nombre_del_entorno
@@ -64,10 +64,10 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
 
 1. **Abrir el símbolo del sistema:** Si aún no lo tienes abierto, abre el símbolo del sistema siguiendo los pasos que mencionamos anteriormente.
 
-2. **Navegar a la ubicación del entorno virtual:** Usamos el comando cd seguido de la ruta de la carpeta del entorno virtual. 
+2. **Navegar a la ubicación de la carpeta Generador:** Usamos el comando cd seguido de la ruta de la carpeta del generador 
     
     ```bash
-    cd ruta\de\la\carpeta\del\entorno\virtual
+    cd ruta\de\la\carpeta\Generador
     ```
 
 3. **Activar el entorno virtual:** Para activar el entorno virtual, ejecuta el siguiente comando:
@@ -76,7 +76,7 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
     nombre_del_entorno\Scripts\activate
     ```
 
-4. **Instalación de paquetes:** Copiamos el archivo requirements.txt en la ubicación del proyecto. Ejecutamos el siguiente comando en el símbolo del sistema
+4. **Instalación de paquetes:** Copiamos el archivo requirements.txt en la ubicación de la carpeta. Ejecutamos el siguiente comando en el símbolo del sistema
     
     ```bash
     python3 - m pip install -r requirements.txt
@@ -86,17 +86,24 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
 
 ## 4. Ejecución del Script
 
-1. **Archivos del proyecto:** Copiamos los archivos del proyecto a ejecutar, en la carpeta de su entorno virtual.
+1. **Archivos del proyecto:** En la carpeta Generador, crear una carpeta con el nombre `Input`, donde copiaremos todos los datos de entrada del proyecto:
 
-2. **Archivo SeismicHazard.ipynb:** Copiamos el archivo SeismicHazard.ipynb en la carpeta de su entorno virtual.
+    - job.ini
+    - source_model.xml
+    - source_model_logic_tree.xml
+    - gmpe_logic_tree.xml
+    - site_model.csv (si se requiere)
 
-3. **Activamos el entorno virtual:** Abrimos el símbolo del sistema, nos dirigimos con el comando `cd` a la ubicación del entorno virtual. Y activamos el entorno virtual.
-
-4. **Ejecución del archivo:** Abrimos el script con el siguiente comando:
+3. **Activamos el entorno virtual:** Abrimos el símbolo del sistema, nos dirigimos con el comando `cd` a la ubicación de la carpeta `Generador`. Y activamos el entorno virtual.
 
     ```bash
-    jupyter notebook SeismicHazard.ipynb
+    nombre_del_entorno\Scripts\activate
     ```
-    Se abrirá el archivo en su navegador por defecto. Dar click en el botón "Run" para ejecutar el script.
 
-5. **Salidas del proyecto:** Luego de que termine la ejecución del script, se generará la carpeta llamada "output", donde encontrará los datos, las gráficas, las tablas, etc.
+4. **Ejecución del Generador:** Para ejecutar el script, escribimos el siguiente comando en el símbolo del sistema:
+
+    ```bash
+    python3 SeismicHazardGenerator.py
+    ```
+
+5. **Salidas del proyecto:** Luego de que termine la ejecución del script, se generará la carpeta llamada "Output", donde podrá encontrar los datos, las gráficas, las tablas, etc generadas de la librería OpenQuake.
