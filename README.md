@@ -76,7 +76,7 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
     nombre_del_entorno\Scripts\activate
     ```
 
-4. **Instalación de paquetes:** Copiamos el archivo requirements.txt en la ubicación de la carpeta. Ejecutamos el siguiente comando en el símbolo del sistema
+4. **Instalación de paquetes:** Ejecutamos el siguiente comando en el símbolo del sistema
     
     ```bash
     python3 - m pip install -r requirements.txt
