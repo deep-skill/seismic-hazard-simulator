@@ -6,16 +6,33 @@ import shutil
 import subprocess
 import re
 
-# === Variables de entrada ===
+
+
+# ========= Variables de entrada =============
 
 # 1. Aceleraciones espectrales para las gráficas
 
 ts_list = ['PGA', 'SA(0.2)', 'SA(0.5)', 'SA(1.0)', 'SA(2.0)']
 ts_values = [0.01, 0.20, 0.50, 1.00, 2.00]
 
+# 2. Gráficas de las Curvas de Peligro
+
+hazard_curve_x_lim = (0.01, 10.00)
+hazard_curve_x_ticks = [0.01, 1.00, 10.00]
+
+hazard_curve_y_lim = (0.0001, 1)
+hazard_curve_y_ticks = [0.0001, 0.001, 0.01, 0.1, 1]
+
+# 3. Gráficas de Espectro de Peligro Uniforme
+
+uhs_x_lim = (0.01, 10.00)
+uhs_x_ticks = [0.01, 0.10, 1.00, 10.00]
+
+# ===============================================
 
 
-# === Ejecución del modelo y obtención de output
+
+# ========== Ejecución del modelo y obtención de output ==========
 
 subprocess.run('oq dbserver stop', shell=True)
 subprocess.run('oq dbserver start', shell=True)
@@ -25,7 +42,7 @@ current_directory = os.path.dirname(current_file_path)
 
 dir_route = current_directory + '/Input'
 job_route = dir_route + '/job.ini'
-# subprocess.run('oq engine --run \'' + job_route + '\'', shell=True)
+subprocess.run('oq engine --run \'' + job_route + '\'', shell=True)
 
 lhc = subprocess.getoutput('oq engine --lhc').split('\n')
 last_hc = re.split(r'\s+', lhc[-1])
@@ -117,13 +134,17 @@ for coord in range(n_coord):
     ax.set_title('CURVA DE PROBABILIDAD DE EXCEDENCIA PARA ACELERACIÓN ESPECTRAL\n(PUNTO ' + str(coord+1) + ')')
 
     ax.set_xscale('log')
-    ax.set_xlim(0.01, 10.00)
-    ax.set_xticks([0.01, 1.00, 10.00])
+    ax.set_xlim(hazard_curve_x_lim[0], hazard_curve_x_lim[1])
+    #ax.set_xlim(0.01, 10.00)
+    ax.set_xticks(hazard_curve_x_ticks)
+    #ax.set_xticks([0.01, 1.00, 10.00])
     ax.set_xlabel('Aceleración espectral (g)')
 
     ax.set_yscale('log')
-    ax.set_ylim(0.0001, 1)
-    ax.set_yticks([0.0001, 0.001, 0.01, 0.1, 1])
+    ax.set_ylim(hazard_curve_y_lim[0], hazard_curve_y_lim[1])
+    #ax.set_ylim(0.0001, 1)
+    ax.set_yticks(hazard_curve_y_ticks)
+    #ax.set_yticks([0.0001, 0.001, 0.01, 0.1, 1])
     ax.set_ylabel('Probabilidad de excedencia')
 
     ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
@@ -156,8 +177,10 @@ for coord in range(n_coord):
     ax.set_title('Espectros de Peligro Uniforme (PUNTO ' + str(coord+1) + ')')
 
     ax.set_xscale('log')
-    ax.set_xlim(0.01, 10.00)
-    ax.set_xticks([0.01, 0.10, 1.00, 10.00])
+    ax.set_xlim(uhs_x_lim[0], uhs_x_lim[1])
+    #ax.set_xlim(0.01, 10.00)
+    ax.set_xticks(uhs_x_ticks)
+    #ax.set_xticks([0.01, 0.10, 1.00, 10.00])
     ax.set_xlabel('Periodo (s)')
 
     #ax.set_ylim(0.0001, 1)
