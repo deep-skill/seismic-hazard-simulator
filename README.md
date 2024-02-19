@@ -73,7 +73,7 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
 4. **Instalación de paquetes:** Ejecutamos el siguiente comando en el símbolo del sistema
     
     ```bash
-    pip install -r requirements.txt
+    pip install -r requeriments.txt
     ```
 
 # Ejecución
