@@ -97,7 +97,7 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
 4. **Ejecución del Generador:** Para ejecutar el script, escribimos el siguiente comando en el símbolo del sistema:
 
     ```bash
-    python3 SeismicHazardGenerator.py
+    python SeismicHazardGenerator.py
     ```
 
 5. **Salidas del proyecto:** Luego de que termine la ejecución del script, se generará la carpeta llamada "Output", donde podrá encontrar los datos, las gráficas, las tablas, etc generadas de la librería OpenQuake.
