@@ -30,16 +30,10 @@ Ahora crearemos un entorno virtual, que nos permitirá instalar paquetes de Pyth
     cd ruta\de\la\carpeta\Generador
     ```
 
-3. **Instalar virtualenv (si no está instalado):** Es posible que necesites instalar `virtualenv`, una herramienta que te permite crear entornos virtuales. Puedes instalarlo utilizando el siguiente comando:
-
-    ```bash
-    python3 - m pip install virtualenv
-    ```
-
 4. **Crear un nuevo entorno virtual:** Encóntrandonos en la ubicación de la carpeta, ejecutaremos el siguiente comando para crear un nuevo entorno virtual:
 
     ```bash
-    virtualenv nombre_del_entorno
+    python -m venv nombre_del_entorno
     ```
 
     Reemplaza `nombre_del_entorno` con el nombre que desees para tu entorno virtual. Por lo general le daremos el nombre de ".env" al entorno (poner un punto al inicio del nombre hará que la carpeta del entorno virtual esté oculta, y así no obstruir con los archivos del proyecto).
@@ -79,7 +73,7 @@ Instalaremos los paquetes necesarios para la ejecución del script en nuestro en
 4. **Instalación de paquetes:** Ejecutamos el siguiente comando en el símbolo del sistema
     
     ```bash
-    python3 - m pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 # Ejecución
