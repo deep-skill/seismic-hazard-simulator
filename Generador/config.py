@@ -9,13 +9,12 @@ ts_dict = {'PGA' : 0.01,
 
 # 2. Probabilidad de excedencias
 
-tr_dict = {0.4 : 'Tr= 100 años',
-           0.1 : 'Tr= 475 años',
-           0.05 : 'Tr= 1000 años',
-           0.02 : 'Tr= 2475 años',
-           0.01 : 'Tr= 5000 años',
-           0.005 : 'Tr= 10000 años',
-           0.0025 : 'Tr= 50000 años'
+tr_dict = {0.4 : 100,
+           0.1 : 475,
+           0.05 : 1000,
+           0.02 : 2475,
+           0.01 : 5000,
+           0.005 : 10000,
            }
 
 # 3. Gráficas de las Curvas de Peligro
