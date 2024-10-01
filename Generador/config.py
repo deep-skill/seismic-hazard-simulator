@@ -20,10 +20,10 @@ tr_dict = {0.4 : 100,
 # 3. Gráficas de las Curvas de Peligro
 
 hazard_curve_x_lim = (0.01, 10.00)
-hazard_curve_x_ticks = [0.01, 1.00, 10.00]
+hazard_curve_x_ticks = [0.01, 0.10, 1.00, 10.00]
 
-hazard_curve_y_lim = (0.0001, 0.1)
-hazard_curve_y_ticks = [0.0001, 0.001, 0.01, 0.1, 1]
+hazard_curve_y_lim = (0.0001, 0.01)
+hazard_curve_y_ticks = [0.0001, 0.001, 0.01, 0.1]
 
 # 4. Gráficas de Espectro de Peligro Uniforme
 

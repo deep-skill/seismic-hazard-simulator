@@ -4,6 +4,7 @@ import pandas as pd
 import os
 import shutil
 import subprocess
+import numpy as np
 import re
 from pathlib import Path
 from config import *
@@ -14,7 +15,7 @@ ordered_tr_dict = {k : tr_dict[k] for k in sorted(tr_dict, reverse=True)}
 tr_dict = ordered_tr_dict
 
 current_directory = Path.cwd()
-dir_route = current_directory / "Input"
+dir_route = current_directory / "Input2"
 job_route = dir_route / "job.ini"
 current_file_path = Path(__file__).resolve()
 
@@ -35,11 +36,12 @@ with open(job_route, 'w') as f:
 
 # ========== Ejecución del modelo y obtención de output ==========
 
-subprocess.run('oq dbserver stop', shell=True)
-subprocess.run('oq dbserver start', shell=True)
+#subprocess.run('oq dbserver stop', shell=True)
+#subprocess.run('oq dbserver start', shell=True)
 
-oq_run_query = 'oq engine --run \'' + str(job_route) + '\''
-subprocess.run(oq_run_query, shell=True)
+oq_run_query = 'oq engine --run ' + str(job_route)
+os.system(oq_run_query)
+#subprocess.run(oq_run_query, shell=True)
 
 lhc = subprocess.getoutput('oq engine --lhc').split('\n')
 last_hc = re.split(r'\s+', lhc[-1])
@@ -131,8 +133,9 @@ for coord in range(n_coord):
 
         curve = curve.iloc[coord, :].transpose().reset_index()
 
-        curve_df['sa (Ts= ' + str(ts_values[i]) + ')'] = curve['index'].apply(lambda x : float(x[4:]))
-        curve_df['poe (Ts= ' + str(ts_values[i]) + ')'] = curve[coord]
+        curve_df['g (Ts= ' + str(ts_values[i]) + ')'] = curve['index'].apply(lambda x : float(x[4:]))
+        curve_df['r% (Ts= ' + str(ts_values[i]) + ')'] = curve[coord]
+        curve_df['1/tr (Ts= ' + str(ts_values[i]) + ')'] = -np.log(1 - curve[coord] + 1e-20) / 50
 
         curve_df.to_excel(dir_point_routes[coord] / "Hazard Curve Mean.xlsx", index=False)
 
@@ -145,7 +148,7 @@ for coord in range(n_coord):
 for coord in range(n_coord):
     fig, ax = plt.subplots()
 
-    ax.set_title('CURVA DE PROBABILIDAD DE EXCEDENCIA PARA ACELERACIÓN ESPECTRAL\n(PUNTO ' + str(coord+1) + ')')
+    ax.set_title('CURVA DE PROBABILIDAD DE EXCEDENCIA PARA ACELERACIÓN\nESPECTRAL EN 50 AÑOS DE EXPOSICIÓN SÍSMICA (PUNTO ' + str(coord+1) + ')')
 
     ax.set_xscale('log')
     ax.set_xlim(hazard_curve_x_lim[0], hazard_curve_x_lim[1])
@@ -159,18 +162,50 @@ for coord in range(n_coord):
     #ax.set_ylim(0.0001, 1)
     ax.set_yticks(hazard_curve_y_ticks)
     #ax.set_yticks([0.0001, 0.001, 0.01, 0.1, 1])
-    ax.set_ylabel('Probabilidad de excedencia')
+    ax.set_ylabel('PROBABILIDAD DE EXCEDENCIA (r%) EN 50 AÑOS')
 
     ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
     ax.get_yaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
 
     for i in range(len(ts_values)):
-        ax.plot(curves_df[coord].iloc[:, 2 * i], curves_df[coord].iloc[:, 2 * i + 1], label='Ts= ' + str(ts_values[i]) + ' s')
+        ax.plot(curves_df[coord].iloc[:, 3 * i], curves_df[coord].iloc[:, 3 * i + 1], label='Ts= ' + str(ts_values[i]) + ' s')
 
     ax.legend(loc='best')
     plt.grid(True)
 
-    plt.savefig(dir_point_routes[coord] / 'Hazard Curve Mean.png')
+    plt.savefig(dir_point_routes[coord] / 'Hazard Curve Mean (50 años).png')
+    plt.close(fig)
+
+
+for coord in range(n_coord):
+    fig, ax = plt.subplots()
+
+    ax.set_title('CURVA DE PROBABILIDAD ANUAL DE EXCEDENCIA PARA\nACELERACIÓN ESPECTRAL (PUNTO ' + str(coord+1) + ')')
+
+    ax.set_xscale('log')
+    ax.set_xlim(hazard_curve_x_lim[0], hazard_curve_x_lim[1])
+    #ax.set_xlim(0.01, 10.00)
+    ax.set_xticks(hazard_curve_x_ticks)
+    #ax.set_xticks([0.01, 1.00, 10.00])
+    ax.set_xlabel('Aceleración espectral (g)')
+
+    ax.set_yscale('log')
+    ax.set_ylim(hazard_curve_y_lim[0], hazard_curve_y_lim[1])
+    #ax.set_ylim(0.0001, 1)
+    ax.set_yticks(hazard_curve_y_ticks)
+    #ax.set_yticks([0.0001, 0.001, 0.01, 0.1, 1])
+    ax.set_ylabel('PROBABILIDAD ANUAL DE EXCEDENCIA (1/tr)')
+
+    ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
+    ax.get_yaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
+
+    for i in range(len(ts_values)):
+        ax.plot(curves_df[coord].iloc[:, 3 * i], curves_df[coord].iloc[:, 3 * i + 2], label='Ts= ' + str(ts_values[i]) + ' s')
+
+    ax.legend(loc='best')
+    plt.grid(True)
+
+    plt.savefig(dir_point_routes[coord] / 'Hazard Curve Mean (anual).png')
     plt.close(fig)
 
 # ================================================
