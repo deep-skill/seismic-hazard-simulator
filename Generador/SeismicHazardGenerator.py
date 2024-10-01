@@ -58,7 +58,7 @@ os.mkdir(coords_route)
 os.mkdir(oq_output_route)
 os.mkdir(tr_route)
 
-oq_export_query = 'oq engine --export-outputs ' + str(calculation_id) + ' \'' + str(oq_output_route) + '\''
+oq_export_query = 'oq engine --export-outputs ' + str(calculation_id) + ' ' + str(oq_output_route)
 subprocess.run(oq_export_query, shell=True)
 
 hazard_curve_mean_files = os.listdir(oq_output_route)
@@ -171,6 +171,7 @@ for coord in range(n_coord):
     plt.grid(True)
 
     plt.savefig(dir_point_routes[coord] / 'Hazard Curve Mean.png')
+    plt.close(fig)
 
 # ================================================
 # ESPECTROS DE PELIGRO UNIFORME (TABLAS)
@@ -232,16 +233,17 @@ for coord in range(n_coord):
     ax.get_yaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
 
     for i, poe in enumerate(reversed(poes_header)):
-        ax.plot(uhs_tables[coord]['period'], uhs_tables[coord][poe], label=tr_dict[poes[i]])
+        ax.plot(uhs_tables[coord]['period'], uhs_tables[coord][poe], label=tr_dict[poes[-i-1]])
 
     ax.legend(loc='best')
     plt.grid(True)
 
     plt.savefig(dir_point_routes[coord] / 'Hazard UHS Mean.png')
-    # plt.show()
+    plt.close(fig)
 
 # ================================================
 # GENERAR REPORTE 
 # ================================================
+
 
 
