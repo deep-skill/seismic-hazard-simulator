@@ -1,0 +1,2 @@
+custom_site_id,lon,lat,z2pt5,z1pt0,vs30,vs30measured,rx,ry0,rjb,rrup,mag,width,hypo_depth,rake,ztor,dip
+1000,0,0,0.250,50.0,760.0,1,60.0,0.0,10.0,55.0,6.5,20.0,15.0,0.0,10.0,45.0
