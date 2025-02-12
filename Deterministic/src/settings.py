@@ -1,4 +1,7 @@
+from pathlib import Path
 import os
 
 
-PROJECT_FOLDER = os.path.join(os.path.abspath(os.sep), 'SeismicHazard')
+ROOT_FOLDER = Path("~").expanduser()
+PROJECT_FOLDER = os.path.join(ROOT_FOLDER, 'SeismicHazard')
+

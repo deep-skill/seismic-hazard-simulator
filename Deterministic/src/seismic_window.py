@@ -56,6 +56,9 @@ class SeismicWindow(QDialog):
         self._clear_layout()
         self.group_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
 
+        if not os.path.exists(PROJECT_FOLDER):
+            os.mkdir(PROJECT_FOLDER)
+
         all_files = os.listdir(PROJECT_FOLDER)
 
         # Filtrar solo los archivos

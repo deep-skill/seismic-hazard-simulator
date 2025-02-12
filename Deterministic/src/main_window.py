@@ -1,5 +1,5 @@
 import sys
-from PyQt6.QtWidgets import QDialog, QMainWindow, QApplication, QWidget, QHBoxLayout, QPushButton, QVBoxLayout
+from PyQt6.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton, QVBoxLayout
 from qt_material import apply_stylesheet
 
 from weichert_window import WeichertWindow
